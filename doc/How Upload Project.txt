@@ -2,7 +2,8 @@
 pip install setuptools wheel twine
 
 # Compile the packages.
-python3 setup.py sdist
+python setup.py sdist
+python setup.py bdist_wheel
 
 # Make the package shipping to the repository.
 twine upload -r pypi dist/*
